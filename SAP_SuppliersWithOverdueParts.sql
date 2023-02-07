@@ -22,8 +22,7 @@ select
 from 
 	POR1 POR with (nolock)
 	inner join OPOR OPOR with (nolock) on 
-		POR.BaseCard = 'FOCO0063'
-		and POR.DocEntry = OPOR.DocEntry
+		POR.DocEntry = OPOR.DocEntry
 	inner join OCRD OCRD with (nolock) on
 		OPOR.CardCode = OCRD.CardCode
 	inner join dbo.NNM1 NNM1 with (nolock) ON 
