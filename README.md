@@ -6,3 +6,9 @@ Set of T-SQL Query code to obtain information from SAP Bussines ONE in a SQL Ser
 ## Requirements
 
 Kind of obvious, access to a SAP Bussines One database on SQL Server to execute the  code :D
+
+## Code Available
+
+|    Code   | Description    |
+|-----------|----------------|
+|SAP_SuppliersWithOverdueParts.sql | Get Suppliers With Overdue Parts |
