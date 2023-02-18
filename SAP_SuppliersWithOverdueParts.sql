@@ -18,7 +18,7 @@ select
 	,POR.Quantity - isnull(POR.OpenQty,0) dReceived
     , OPOR.DocNum
 	, POR.unitMsr
-	, POR.* 
+
 from 
 	POR1 POR with (nolock)
 	inner join OPOR OPOR with (nolock) on 
