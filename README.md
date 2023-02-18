@@ -9,6 +9,6 @@ Kind of obvious, access to a SAP Bussines One database on SQL Server to execute 
 
 ## Code Available
 
-|    Description   |  Code   |
+|    How to ...   |  Code   |
 |-----------|----------------|
 | Get Suppliers With Overdue Parts |https://github.com/marciopintomotta/SAP-SQLServer/blob/master/SAP_SuppliersWithOverdueParts.sql |
