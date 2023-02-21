@@ -12,3 +12,4 @@ Kind of obvious, access to a SAP Bussines One database on SQL Server to execute 
 |    How to ...   |  Code   |
 |-----------|----------------|
 | Get Suppliers With Overdue Parts |https://github.com/marciopintomotta/SAP-SQLServer/blob/master/SAP_SuppliersWithOverdueParts.sql |
+| Get Open Orders From Customer/Vendor Item Code |https://github.com/marciopintomotta/SAP-SQLServer/blob/master/SAP_GetOpenOrdersFromCustomerVendorItemCode.sql
