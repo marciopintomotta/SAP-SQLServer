@@ -1,11 +1,11 @@
-# SAP-SQLServer
+# SAP - SQL Server
 
-Set of T-SQL Query code to obtain information from SAP Bussines ONE in a SQL Server Database structure.
+Set of SQL (T-SQL) query code to obtain information from SAP Bussines ONE in a SQL Server Database structure.
 
 
 ## Requirements
 
-Kind of obvious, access to a SAP Bussines One database on SQL Server to execute the  code :D
+Kind of obvious, access to a SAP Bussines One database on SQL Server to execute the code :D
 
 ## Code Available
 
