@@ -1,10 +1,11 @@
 declare
-	@SubCatNum varchar(50) = 'JD124002-6200'
-	, @CardCode varchar(15) = 'CLAU0045'
+	@SubCatNum varchar(50) = '4100275'
+	, @CardCode varchar(15) = null -- 'CLAU0045'
 
 select
 	
-	RDR1.SubCatNum
+	RDR1.SubCatNum ClienItemCode
+	,ORDR.NumAtCard ClientExternalOrder
 	,ORDR.DocEntry
 	,NNM1.[SeriesName] +'/'+ convert(varchar,ORDR.DocNum) [DocSeriesName]
 	,RDR1.ItemCode
@@ -26,7 +27,7 @@ from (
 	from 
 		dbo.RDR1 with (nolock)
 	where
-		RDR1.BaseCard = @CardCode
+		(@CardCode is null or RDR1.BaseCard = @CardCode)
 		and RDR1.SubCatNum = @SubCatNum
 		and RDR1.LineStatus = 'O'
 	group by
