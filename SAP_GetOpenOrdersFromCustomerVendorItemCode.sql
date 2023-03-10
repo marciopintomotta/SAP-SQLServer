@@ -4,7 +4,7 @@ declare
 
 select
 	
-	RDR1.SubCatNum ClienItemCode
+	RDR1.SubCatNum ClientItemCode
 	,ORDR.NumAtCard ClientExternalOrder
 	,ORDR.DocEntry
 	,NNM1.[SeriesName] +'/'+ convert(varchar,ORDR.DocNum) [DocSeriesName]
