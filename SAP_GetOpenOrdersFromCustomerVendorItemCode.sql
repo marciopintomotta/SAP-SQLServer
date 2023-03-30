@@ -7,7 +7,7 @@ select
 	RDR1.SubCatNum ClientItemCode
 	,ORDR.NumAtCard ClientExternalOrder
 	,ORDR.DocEntry
-	,NNM1.[SeriesName] +'/'+ convert(varchar,ORDR.DocNum) [DocSeriesName]
+	,NNM1.[SeriesName] +'/'+ convert(varchar,ORDR.DocNum) [DocumentSeriesName]
 	,RDR1.ItemCode
 	,RDR1.Dscription
 	,ORDR.CardCode
