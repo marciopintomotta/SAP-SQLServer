@@ -19,11 +19,10 @@ select
 	--, OCRD.* 
 
 from
-	FOBRIC_PRD.dbo.OPCH  with (nolock)  
-	inner join FOBRIC_PRD.dbo.NNM1  with (nolock) ON 
-		OPCH.DocDueDate >= DATEADD(s, -1, DATEADD(m, DATEDIFF(m, 0, GETDATE())+1, 0)) 
-		and OPCH.Series = NNM1.Series
+	dbo.OPCH  with (nolock)  
+	inner join dbo.NNM1  with (nolock) ON 
+		OPCH.Series = NNM1.Series
 		and OPCH.ObjType  = NNM1.ObjectCode
-	inner join FOBRIC_PRD.dbo.OCRD  with (nolock) ON
+	inner join dbo.OCRD  with (nolock) ON
 		OPCH.CardCode = OCRD.CardCode
 GO

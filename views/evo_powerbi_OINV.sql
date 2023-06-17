@@ -17,12 +17,12 @@ select
 	, OINV.DocDueDate
 
 from
-	FOBRIC_PRD.dbo.OINV  with (nolock)  
-	inner join FOBRIC_PRD.dbo.NNM1  with (nolock) ON  
+	dbo.OINV  with (nolock)  
+	inner join dbo.NNM1  with (nolock) ON  
 		OINV.Series = NNM1.Series
 		and OINV.ObjType  = NNM1.ObjectCode
 		and OINV.CANCELED = 'N'
-	inner join FOBRIC_PRD.dbo.OCRD  with (nolock) ON
+	inner join dbo.OCRD  with (nolock) ON
 		OINV.CardCode = OCRD.CardCode
 
 

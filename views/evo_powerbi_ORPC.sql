@@ -17,11 +17,11 @@ select
 	, ORIN.DocDueDate
 
 from
-	FOBRIC_PRD.dbo.ORIN  with (nolock)  
-	inner join FOBRIC_PRD.dbo.NNM1  with (nolock) ON  
+	dbo.ORIN  with (nolock)  
+	inner join dbo.NNM1  with (nolock) ON  
 		ORIN.Series = NNM1.Series
 		and ORIN.ObjType  = NNM1.ObjectCode
 		and ORIN.CANCELED = 'N'
-	inner join FOBRIC_PRD.dbo.OCRD  with (nolock) ON
+	inner join dbo.OCRD  with (nolock) ON
 		ORIN.CardCode = OCRD.CardCode
 GO
