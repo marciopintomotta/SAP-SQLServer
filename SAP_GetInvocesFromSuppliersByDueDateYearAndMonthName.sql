@@ -30,3 +30,5 @@ from
 		and OPCH.ObjType  = NNM1.ObjectCode
 	inner join dbo.OCRD  with (nolock) ON
 		OPCH.CardCode = OCRD.CardCode
+		and OPCH.CANCELED = 'N'
+order by OPCH.DocDate
