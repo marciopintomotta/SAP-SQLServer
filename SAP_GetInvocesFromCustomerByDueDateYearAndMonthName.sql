@@ -29,3 +29,6 @@ from
 		and OINV.ObjType  = NNM1.ObjectCode
 	inner join dbo.OCRD  with (nolock) ON
 		OINV.CardCode = OCRD.CardCode
+		and OINV.CANCELED = 'N'
+order by 
+	OINV.DocDueDate
